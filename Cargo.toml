@@ -1,0 +1,19 @@
+[package]
+name = "rustcore"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rustcore"
+crate-type = ["cdylib"]  # wajib untuk menghasilkan .so
+
+[dependencies]
+ndarray = "0.15"
+rand = "0.8"
+csv = "1.1"
+libc = "0.2"
+plotters = "0.3"
+
+[build-dependencies]
+cc = "1.0"
+
